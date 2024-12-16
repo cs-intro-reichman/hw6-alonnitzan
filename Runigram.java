@@ -183,9 +183,9 @@ public class Runigram {
 	 */
 	public static Color blend(Color c1, Color c2, double alpha) {
 		
-		int red = (int) ((double) (c1.getRed() * alpha) + (c2.getRed() * (1 - alpha)));
-		int green = (int) ((double) (c1.getGreen() * alpha) + (c2.getGreen() * (1 - alpha)));
-		int blue = (int) ((double) (c1.getBlue() * alpha) + (c2.getBlue() * (1 - alpha)));
+		int red = (int) (c1.getRed() * alpha + c2.getRed() * (1 - alpha));
+		int green = (int) (c1.getGreen() * alpha + c2.getGreen() * (1 - alpha));
+		int blue = (int) (c1.getBlue() * alpha + c2.getBlue() * (1 - alpha));
 
 		Color c = new Color (red, green, blue);
 		return c;
