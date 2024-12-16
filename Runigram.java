@@ -50,7 +50,7 @@ public class Runigram {
 		// Test morph
 		Color[][] thor = read("thor.ppm");
 		Color[][] ironman = read("ironman.ppm");
-		//morph(thor, ironman, 10);
+		morph(thor, ironman, 10);
 
 	}
 
